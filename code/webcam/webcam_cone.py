@@ -59,7 +59,7 @@ def detect_fn(image):
 print("[LOCAL] Files loaded successfully")
 print("[LOCAL] Starting video capture")
 
-stream = 'http://10.50.72.107:8085/?action=stream'
+stream = 'http://10.0.0.41:8085/?action=stream'
 os.environ['OPENCV_FFMPEG_CAPTURE_OPTIONS'] = 'rtsp_transport;udp'
 
 cap = cv2.VideoCapture(stream, cv2.CAP_FFMPEG)
